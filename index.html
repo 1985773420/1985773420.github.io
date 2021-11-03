@@ -1,86 +1,271 @@
-<!DOCTYPE html>
-<html lang="zh" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>基于HTML5 WebGL的图像扭曲变形动画特效|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
-	<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-</head>
-	<body class="loading cda-naked cda-noimg cda-removeleft  demo-1">
-		<main>
-			<div class="frame">
-				<div class="frame__title-wrap">
-					<h1 class="frame__title">Configurator for Creating Custom WebGL Distortion Effects</h1>
-					<p class="frame__tagline">Click the image</a></p>
-				</div>
-				<div class="frame__links">
-					<a href="http://www.htmleaf.com/">jQuery之家</a>
-					<a href="http://www.htmleaf.com/html5/html5-canvas/201909185794.html">返回下载页</a>
-				</div>
-				<div class="frame__demos">
-					<a href="index.html?default=true" class="frame__demo frame__demo--current">preset 1</a>
-					<a href="index2.html?default=true" class="frame__demo">preset 2</a>
-					<a href="index3.html?default=true" class="frame__demo">preset 3</a>
-					<a href="index4.html?default=true" class="frame__demo">preset 4</a>
-					<a href="index5.html?default=true" class="frame__demo">preset 5</a>
-					<a href="index6.html?default=true" class="frame__demo">preset 6</a>
-				</div>
-			</div>
-			<div id="app"></div>
-			<div class="content" id="items-wrap">
-				<div class="item">
-					<img class="content__img" src="img/1.jpg" alt="An image" />
-					<img class="content__img content__img--large" src="img/1_large.jpg" alt="An image" />
-				</div>
-			</div>
-		</main>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/three.min.js"></script>
-		<script src="js/TweenLite.min.js"></script>
-		<script src="js/CSSPlugin.min.js"></script>
-		<script src="js/EasePack.min.js"></script>
-		<script src="js/dat-gui.min.js"></script>
-		<script src="js/Configurator.js"></script>
-		<script src="js/GridToFullscreenEffect.js"></script>
-		<script src="js/basicDemo.js"></script>
-		<script>
-			const itemsWrapper = document.getElementById('items-wrap');
-
-			const configurator = createDemoConfigurator({
-				activation:{props:{topLeft:true}},
-				transformation:{
-					type:"simplex",
-					props:{amplitudeX:1,frequencyX:0.4,progressLimit:0.25}
-				},
-				duration:2.5,
-				easings:{"toFullscreen":"Power2.easeOut","toGrid":"Power2.easeOut"}
-				
-			})
-		imagesLoaded(document.querySelectorAll("img"), instance => {
-
-			//https://www.techrepublic.com/article/preloading-and-the-javascript-image-object/
-			document.body.classList.remove("loading");
-			let images = [];
-				for (var i = 0, imageSet = {}; i < instance.elements.length; i++) {
-					let image = {
-						element: instance.elements[i],
-						image: instance.images[i].isLoaded ? instance.images[i].img : null
-					};
-					if (i % 2 === 0) {
-						imageSet = {};
-						imageSet.small = image;
-					}
-
-					if (i % 2 === 1) {
-						imageSet.large = image;
-						images.push(imageSet);
-					}
-				}
-				configurator.effect.createTextures(images);
-			});
-		
-		</script>
-</body>
-</html>
+Bookmarks
+收藏夹栏
+工具
+AI
+ai.oa.com/exception/login?redirect=http%3A%2F%2Fmingan.oa.com%2Flogin%2Flogin_oa_v2.php%3Fsys_id%3D2575%26login_mode%3Doa%26sys_url%3Dhttp%253A%252F%252Fai.oa.com%252Fpid-order%252Flist
+工具地图
+CDN
+CDN运维中心
+海外CDN控制台
+CDN自动化运营管理平台
+日志美化工具
+QGET
+CDN白名单管理
+域名备案查询
+腾讯IP地址库-首页
+COS
+野鹤
+CVM
+TSS - 常用工具
+TNM2网管系统 - 服务器综合视图：121.51.18.107
+腾讯云 -APOLLO网络运营系统
+腾讯云 -APOLLO网络运营系统
+VS
+查看mac地址
+退货限额
+专项组综合运营平台
+弹性伸缩
+修改子机状态
+旧版vs
+代金券赔付申请-磐石经营服务平台
+磐石系统申请代金券&现金操作流程
+镜像失败任务查询
+cvm配额
+CVM各种工具链接查看
+VNC
+腾讯云账号运营 - 白名单管理
+轻量实例查询
+计费
+腾讯云计费管理平台
+汇金
+ECDN
+=============ECDN运维中心
+CFS
+文件系统查询
+文件系统查询
+腾讯云知识库
+投递记录查询
+云API
+Kibana
+API
+Kibana
+关联搜索 - 基础运营
+yunapi_3.0日志查询
+Wiki-云API日志查询和分析方法--包括现网、预发、测试和开发四种环境-云API-TAPD平台
+代金券
+代金券申请
+代金券查询
+敏感操作
+======进救援
+======退救援
+=======重置密码
+======开启虚拟机
+======进入救援的记录
+=======重启
+安全工具
+合规运营管理平台
+WAF运营平台
+大禹运营平台
+主机安全
+在线工具 - OKTools
+书签工具栏
+流程相关
+======云镜
+======在线沙箱
+======勒索检索
+======微步在线威胁情报社区
+======病毒木马知识库
+======一线客服手册
+======话术腾讯云知识库
+======云镜最新版
+CVM内部机型代号与官网实例类型对应关系
+重装系统流程及话术
+子机到期数据恢复
+高危敏感问题升级流程（中长尾）
+上海一区回馈老客户活动事项
+主机入侵标准化处理流程
+违规解封类工单标准化处理流程V1.0
+基础队列第三方软件标准化支持流程：
+乐固工单规范处理流程v2.0
+举报相关
+CBS资源到期处理 - 腾讯文档
+系统漏洞扫描
+公网带宽上限
+腾讯文档
+话术修改
+公告-腾讯云 打击VPN
+关于vpn封禁的话术和处理方案1206
+话术回复模板3.0
+网络产品白名单、调整配额原则
+小众产品队列分配
+-----------------安畅转单队列参考链接-------------
+-----------------小众产品转单----------------------
+============安畅售后工单派单队列0416
+============工单归档
+违规告警/封禁/清退话术大全
+计算产品白名单参照表
+VPN翻墙滚动打击违规用户名单
+乐固工单规范处理流程v2.0
+call center工单处理流程
+SBL黑名单处理步骤
+PBL黑名单处理步骤
+腾讯会议-支持中心
+文字识别--界面
+腾讯云知识库
+基础队列组质检工单汇总
+TSS - 首页
+需求场景话术
+知识库整合（注意不同sheet表）
+需求-服务运营与产品中心-TAPD平台
+======母机故障通知详解_Ping不可达FAQ
+常见的问题处理流程
+============合规问题处理流程
+============控制台CBS卸载不成功
+======合规的
+CDN日志
+bootstrap-fileinput中文网|介绍
+java+springboot+bootstrap-fileInput 文件上传前后台完整示例 - 猪哥哥厉害 - 博客园
+springMVC上传文件，使用MultipartHttpServletRequest、MultipartFile进行文件上传_java_阿杰的博客-CSDN博客
+Tencent_Console
+======云服务器（CVM）
+======对象存储（COS）
+======文件存储（CFS）
+======内容分发网络（CDN）
+======海外加速（GCD）
+======全站加速（ECDN）
+======负载均衡（CLB）
+======私有网络（VPC）
+======数据万象
+======文档中心
+负载均衡 - 文档中心 - 腾讯云
+堡垒机 - 文档中心 - 腾讯云
+日志服务 - 控制台
+角色管理
+考试
+工具相关
+常用链接
+在线API
+Linux进入单用户
+CVM使用限制总览
+常见故障---腾讯官网
+http常见状态码定义及复现
+IPIP.NET_专业的 IP 地址库_IPIP.NET
+445端口平台没有封禁
+生成随机密码 - 密码生成器
+Google 翻译
+自己的CSDN
+企点知识库
+在线JSON校验格式化工具（Be JSON）
+域名被墙
+备案
+时间戳- 在线工具
+windows常见CMD命令指令集
+网络测试工具
+======Boce测速网======
+======IPIP.Net=========
+======腾讯安图
+======子网掩码
+^_^MainTools^_^
+======Andon - 在线情况
+======CDN工具
+=============CDN运维中心
+======CDN综合查询
+======CDN封禁记录查询
+======CDN访问日志下载
+======CDN刷新记录查询
+======CDN回源日志下载
+======COS工具
+=============COS YY 运营系统
+=============数据万象
+======CVM工具
+======新版---违规封禁查询
+======旧版---违规封禁查询
+======网络产品
+======负载均衡查询
+外网工具
+======VS日志
+======白名单工具【EIP直通；整机镜像；系统盘数据拷贝；带宽上移账号联系v_ruzzzhao】
+======负载均衡查询
+======弹性网卡
+======ACL
+======告警查询
+======基础告警小工具
+======账单2.0查看 - 汇金
+======产品内侧申请
+======控制台报错
+======基础监控告警
+======消息查询工具【野鹤】
+======安全产品
+======合规 - 已审核列表
+======合规 - 违规封禁
+======新版违规
+======最古老的违规工具
+======内容违规
+======高防产品查询
+======DDos攻击查询
+======云镜
+WAF运营平台
+======轻量云主机
+======LightHouse主机常见问题FAQ
+======LH实例查询
+======LH订单查询
+======LH退还超20台无法自助退还工单记录
+======CVM查询
+======安全组查询
+诊断工具
+======MTR测试连接
+======服务器详情【星云】
+======日志分析
+======镜像查询
+======VNC开启神秘之旅
+======母机故障查询
+======修改子机状态
+======账号
+======是否带宽上移账号
+======订单管理
+======客户信息查询
+======内测申请与问卷调查
+======账号消费记录
+======电话录音
+======账号特权
+====== 退换记录
+======域名
+======SSL证书管理
+======宙斯盾域名封禁查询
+======CBS云硬盘查询
+======CBS云盘查询
+======快照查询
+======磁盘监控查询
+文件存储
+======文件系统查询
+TSS - 常用工具
+知识库
+母机故障通知渠道
+windows服务器云硬盘解挂载失败，控制台无报错
+Lighthouse轻量云主机工具
+对外攻击FAQ
+Linux机器异常重启问题排查
+超预期服务场景话术文档
+腾讯认证
+腾讯云认证考试备考资料及常见QA【内部专用】
+挖矿
+磁盘售罄-挖矿
+配额申请流程优化--V1.0
+Wiki-首页-专项计算队列-TAPD平台
+Webim
+Wiki-CVM现网问题定位人员指引-计算产品中心知识库-TAPD平台
+母机运维/CBS运维值班表
+母机故障排障汇总
+已销毁的本地盘/云盘如何找回数据（已销毁CVM/CBS数据找回、恢复已销毁CVM/CBS、CVM数据恢复）
+专项计算队列排班表（新）
+webim专项质检标准
+计算队列全链路服务差评复盘
+首页_andata
+其他书签
+课堂 - 分类
+SLA
+======CVM错误码
+工具平台
+======云审计
+Andon - 工单详情 - 5538127
+带宽网速计算器,带宽和网速换算
